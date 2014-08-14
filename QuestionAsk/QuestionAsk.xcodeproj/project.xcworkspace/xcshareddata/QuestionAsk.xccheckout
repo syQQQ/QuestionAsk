@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87491773-23F6-4356-8939-14784A99BC78</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuestionAsk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B5A4EA31-2E2C-4A9B-BDC5-4775D153419E</key>
+		<string>https://github.com/syQQQ/QuestionAsk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuestionAsk/QuestionAsk.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B5A4EA31-2E2C-4A9B-BDC5-4775D153419E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/syQQQ/QuestionAsk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B5A4EA31-2E2C-4A9B-BDC5-4775D153419E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B5A4EA31-2E2C-4A9B-BDC5-4775D153419E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuestionAsk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
