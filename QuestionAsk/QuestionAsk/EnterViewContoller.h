@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnterViewController : UIViewController
+@interface EnterViewController : UIViewController <UITextFieldDelegate>
 
+@property (nonatomic, retain)IBOutlet UITextField *nameTF;
+@property (nonatomic, retain)IBOutlet UITextField *pwdTF;
+- (IBAction)textFieldReturnEditing:(id)sender;
+- (IBAction)backgroundTap:(id)sender;
 @end

@@ -27,4 +27,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)textFieldReturnEditing:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+- (IBAction)backgroundTap:(id)sender
+{
+    [self.nameTF resignFirstResponder];
+    [self.pwdTF resignFirstResponder];
+}
 @end
