@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    [self initControls];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -37,4 +37,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+//初始化控件
+- (void)initControls
+{
+    UIImage *backgroundImage = [UIImage imageNamed:@"index_white_bg.png"];
+    
+    backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
+    
+    for (UIImageView *backRect in self.backRects) {
+        [backRect setImage:backgroundImage];
+        [backRect setAlpha:0.9];
+    }
+
+}
 @end

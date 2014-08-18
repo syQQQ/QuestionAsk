@@ -10,6 +10,8 @@
 
 @interface EnterViewController : UIViewController <UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UIButton *enterBtn;
+@property (strong, nonatomic) IBOutlet UIButton *registerBtn;
 @property (nonatomic, retain)IBOutlet UITextField *nameTF;
 @property (nonatomic, retain)IBOutlet UITextField *pwdTF;
 - (IBAction)textFieldReturnEditing:(id)sender;

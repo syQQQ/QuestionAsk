@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vTi-hu-GVA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vTi-hu-GVA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--MainViewController-->
@@ -16,169 +17,160 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="index1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-6E-fWv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="index_bg_ios.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-6E-fWv">
                                 <rect key="frame" x="-9" y="0.0" width="339" height="568"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QDs-GH-t5q">
-                                <rect key="frame" x="20" y="45" width="52" height="49"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRA-bX-PDN">
-                                <rect key="frame" x="277" y="59" width="25" height="26"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKx-om-yfQ">
-                                <rect key="frame" x="14" y="299" width="294" height="101"/>
-                            </imageView>
-                            <view alpha="0.34999999999999964" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-6r-ReY">
-                                <rect key="frame" x="14" y="168" width="294" height="128"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-6r-ReY" customClass="UIImageView">
+                                <rect key="frame" x="13" y="177" width="294" height="125"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="答题量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-UO-flT">
-                                        <rect key="frame" x="212" y="14" width="51" height="21"/>
+                                        <rect key="frame" x="212" y="13" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="226" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pr-n0-xAM">
-                                        <rect key="frame" x="253" y="14" width="29" height="21"/>
+                                        <rect key="frame" x="253" y="13" width="29" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的练习" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-CB-2eG">
-                                        <rect key="frame" x="15" y="14" width="68" height="21"/>
+                                        <rect key="frame" x="15" y="13" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-b9-duv">
-                                        <rect key="frame" x="227" y="59" width="48" height="46"/>
-                                        <state key="normal" title="...">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-b9-duv">
+                                        <rect key="frame" x="227" y="55" width="50" height="50"/>
+                                        <state key="normal" image="题先生UI规范_88.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted" image="题先生UI规范_100.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Io-dsu">
-                                        <rect key="frame" x="87" y="59" width="48" height="46"/>
-                                        <state key="normal" title="TD">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Io-dsu">
+                                        <rect key="frame" x="87" y="55" width="50" height="50"/>
+                                        <state key="normal" image="题先生UI规范_84.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted" image="题先生UI规范_98.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-0j-13O">
-                                        <rect key="frame" x="16" y="59" width="48" height="46"/>
-                                        <state key="normal" title="GSM">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-0j-13O">
+                                        <rect key="frame" x="14" y="54" width="50" height="50"/>
+                                        <state key="normal" image="题先生UI规范_82.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted" image="题先生UI规范_97.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gt-MI-DID">
-                                        <rect key="frame" x="160" y="59" width="48" height="46"/>
-                                        <state key="normal" title="LTE">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gt-MI-DID">
+                                        <rect key="frame" x="160" y="55" width="50" height="50"/>
+                                        <state key="normal" image="题先生UI规范_86.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted" image="题先生UI规范_99.png"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukW-0e-qxA">
-                                <rect key="frame" x="14" y="299" width="294" height="101"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukW-0e-qxA" customClass="UIImageView">
+                                <rect key="frame" x="13" y="311" width="294" height="98"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的工具" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWD-eJ-Rlt">
-                                        <rect key="frame" x="16" y="15" width="68" height="21"/>
+                                        <rect key="frame" x="16" y="13" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5O8-bL-THS">
-                                        <rect key="frame" x="16" y="41" width="265" height="13"/>
+                                        <rect key="frame" x="16" y="39" width="265" height="13"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="查指令" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXH-YC-tdY">
-                                        <rect key="frame" x="14" y="67" width="51" height="21"/>
+                                        <rect key="frame" x="14" y="64" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="查参数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14s-Gf-BjF">
-                                        <rect key="frame" x="87" y="67" width="45" height="21"/>
+                                        <rect key="frame" x="87" y="64" width="45" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="查指标" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZS-g8-pQ7">
-                                        <rect key="frame" x="159" y="67" width="45" height="21"/>
+                                        <rect key="frame" x="159" y="64" width="45" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="。。。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXM-M1-ETh">
-                                        <rect key="frame" x="229" y="66" width="45" height="21"/>
+                                        <rect key="frame" x="229" y="63" width="45" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-UE-wHH">
-                                        <rect key="frame" x="67" y="57" width="7" height="40"/>
+                                        <rect key="frame" x="67" y="53" width="7" height="40"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-yq-eKl">
-                                        <rect key="frame" x="142" y="58" width="7" height="40"/>
+                                        <rect key="frame" x="142" y="54" width="7" height="40"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="daX-dd-nNV">
-                                        <rect key="frame" x="214" y="57" width="7" height="40"/>
+                                        <rect key="frame" x="214" y="53" width="7" height="40"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.34999999403953552" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-FU-UJ7">
-                                <rect key="frame" x="13" y="406" width="294" height="101"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-FU-UJ7" customClass="UIImageView">
+                                <rect key="frame" x="13" y="418" width="294" height="98"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的工作" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iao-PL-uoQ">
-                                        <rect key="frame" x="16" y="15" width="68" height="21"/>
+                                        <rect key="frame" x="16" y="13" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-X2-grK">
-                                        <rect key="frame" x="16" y="41" width="265" height="13"/>
+                                        <rect key="frame" x="16" y="39" width="265" height="13"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="项目信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO0-XX-VGo">
-                                        <rect key="frame" x="10" y="67" width="64" height="21"/>
+                                        <rect key="frame" x="10" y="64" width="64" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号口令" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i45-FA-fEO">
-                                        <rect key="frame" x="87" y="67" width="56" height="21"/>
+                                        <rect key="frame" x="87" y="64" width="56" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="。。。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-9s-53S">
-                                        <rect key="frame" x="229" y="66" width="45" height="21"/>
+                                        <rect key="frame" x="229" y="63" width="45" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kf5-BN-kb1">
-                                        <rect key="frame" x="67" y="57" width="7" height="40"/>
+                                        <rect key="frame" x="67" y="53" width="7" height="40"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEI-VR-8dg">
-                                        <rect key="frame" x="142" y="58" width="7" height="40"/>
+                                        <rect key="frame" x="142" y="54" width="7" height="40"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMe-pC-qlC">
-                                        <rect key="frame" x="214" y="57" width="7" height="40"/>
+                                        <rect key="frame" x="214" y="53" width="7" height="40"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="费用管理" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-22-Btr">
-                                        <rect key="frame" x="157" y="67" width="60" height="21"/>
+                                        <rect key="frame" x="157" y="64" width="60" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="搜索：题库" translatesAutoresizingMaskIntoConstraints="NO" id="nzE-Ul-Kgx">
-                                <rect key="frame" x="0.0" y="118" width="320" height="44"/>
-                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                            <searchBar alpha="0.5" contentMode="redraw" fixedFrame="YES" barStyle="black" placeholder="搜索：题库" translatesAutoresizingMaskIntoConstraints="NO" id="nzE-Ul-Kgx">
+                                <rect key="frame" x="13" y="124" width="294" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="立即登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-af-aKt">
-                                <rect key="frame" x="74" y="59" width="68" height="21"/>
+                                <rect key="frame" x="79" y="51" width="68" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -187,11 +179,30 @@
                                     <outletCollection property="gestureRecognizers" destination="XUd-k2-6UX" appends="YES" id="56W-Bu-Udn"/>
                                 </connections>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbC-4k-UjW">
+                                <rect key="frame" x="21" y="37" width="50" height="50"/>
+                                <state key="normal" image="题先生UI规范_90.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz4-v5-erw">
+                                <rect key="frame" x="269" y="42" width="40" height="40"/>
+                                <state key="normal" image="题先生UI规范_108.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qif-hC-Q4Z"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="nzE-Ul-Kgx" id="kzr-CR-tEj"/>
+                        <outletCollection property="backRects" destination="ukW-0e-qxA" id="lDC-m0-za6"/>
+                        <outletCollection property="backRects" destination="Gha-6r-ReY" id="MEr-hO-lIb"/>
+                        <outletCollection property="backRects" destination="ukW-0e-qxA" id="5sa-gE-uQe"/>
+                        <outletCollection property="backRects" destination="pt0-FU-UJ7" id="Bup-Pb-QA1"/>
+                    </connections>
                 </viewController>
                 <tapGestureRecognizer id="XUd-k2-6UX">
                     <connections>
@@ -212,14 +223,14 @@
                         <viewControllerLayoutGuide type="bottom" id="GDN-RN-8Ib"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="j7c-bI-Mqo" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="94" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCM-8t-ulR" customClass="UIControl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="登录名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWi-Jq-Av7">
-                                        <rect key="frame" x="20" y="9" width="51" height="20.5"/>
+                                        <rect key="frame" x="20" y="9" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -233,7 +244,7 @@
                                         <rect key="frame" x="12" y="76" width="295" height="7"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5i-zs-Gz4">
-                                        <rect key="frame" x="20" y="49" width="34" height="20.5"/>
+                                        <rect key="frame" x="20" y="49" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -261,6 +272,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTu-Ie-04n">
                                         <rect key="frame" x="69" y="106" width="183" height="43"/>
                                         <state key="normal" title="登录"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="W7h-7w-O6a" kind="push" id="dRD-af-YHd"/>
                                         </connections>
@@ -283,8 +297,10 @@
                     <navigationItem key="navigationItem" title="登录" id="6qz-OA-g3a"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="enterBtn" destination="ZTu-Ie-04n" id="gyG-c0-M4O"/>
                         <outlet property="nameTF" destination="FHq-pH-1B1" id="ake-XC-2CE"/>
                         <outlet property="pwdTF" destination="3oe-no-9R3" id="m8R-Tw-7j7"/>
+                        <outlet property="registerBtn" destination="XHv-Ef-DKw" id="dHe-ch-Rel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fM4-03-xhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -300,7 +316,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jfQ-Pf-KwM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DSw-Rs-IyZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -330,7 +346,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="index1.jpg" width="720" height="1280"/>
+        <image name="index_bg_ios.jpg" width="320" height="568"/>
+        <image name="题先生UI规范_100.png" width="50" height="50"/>
+        <image name="题先生UI规范_108.png" width="40" height="40"/>
+        <image name="题先生UI规范_82.png" width="50" height="50"/>
+        <image name="题先生UI规范_84.png" width="50" height="50"/>
+        <image name="题先生UI规范_86.png" width="50" height="50"/>
+        <image name="题先生UI规范_88.png" width="50" height="50"/>
+        <image name="题先生UI规范_90.png" width="50" height="50"/>
+        <image name="题先生UI规范_97.png" width="50" height="50"/>
+        <image name="题先生UI规范_98.png" width="50" height="50"/>
+        <image name="题先生UI规范_99.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
