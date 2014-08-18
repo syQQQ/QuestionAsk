@@ -16,4 +16,7 @@
 @property (nonatomic, retain)IBOutlet UITextField *pwdTF;
 - (IBAction)textFieldReturnEditing:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
+- (void)initControls;
+- (void)logIn;
+- (BOOL)validateNumber:(NSString*)number;
 @end
