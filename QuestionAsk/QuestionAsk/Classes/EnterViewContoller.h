@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ButtonWithBorder.h"
 @interface EnterViewController : UIViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) IBOutlet UIButton *enterBtn;
-@property (strong, nonatomic) IBOutlet UIButton *registerBtn;
+@property (strong, nonatomic) IBOutlet ButtonWithBorder *enterBtn;
+@property (strong, nonatomic) IBOutlet ButtonWithBorder *registerBtn;
 @property (nonatomic, retain)IBOutlet UITextField *nameTF;
 @property (nonatomic, retain)IBOutlet UITextField *pwdTF;
 - (IBAction)textFieldReturnEditing:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
-- (void)initControls;
 - (void)logIn;
-- (BOOL)validateNumber:(NSString*)number;
 @end

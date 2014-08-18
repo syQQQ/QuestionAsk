@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, myStyle)
+{
+    blue,
+    white
+};
+
 @interface ButtonWithBorder : UIButton
-- (void)addBorder;
+- (void)setStyle:(myStyle)style;
 @end

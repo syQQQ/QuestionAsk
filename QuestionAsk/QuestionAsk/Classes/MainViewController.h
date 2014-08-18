@@ -12,5 +12,4 @@
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *backRects;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
-- (void)initControls;
 @end
