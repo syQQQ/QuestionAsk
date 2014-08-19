@@ -17,7 +17,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self initControls];
 }
 
