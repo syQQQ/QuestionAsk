@@ -48,7 +48,7 @@
             self.titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
         }
             break;
-        case whiteAndred:
+        case whiteAndRed:
         {
             UIImage *backgroundImage = [UIImage imageNamed:@"btn_white_bg.png"];
             backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
