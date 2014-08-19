@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSInteger, myStyle)
 {
     blue,
-    white
+    white,
+    whiteAndRed
 };
 
 @interface ButtonWithBorder : UIButton

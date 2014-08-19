@@ -31,18 +31,34 @@
 - (void)setStyle:(myStyle)style
 {
     self.titleLabel.font = [UIFont fontWithName:@"System" size:22];
-    if (style == blue) {
-        UIImage *backgroundImage = [UIImage imageNamed:@"btn_blue_bg.png"];
-        backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
-        [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
-//        [self setBackgroundColor:[UIColor colorWithRed:[self rgbChange:23] green:[self rgbChange:183] blue:[self rgbChange:243] alpha:1.0f]];
-    }else if (style == white) {
-//        [self setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:1.0f]];
-        UIImage *backgroundImage = [UIImage imageNamed:@"btn_white_bg.png"];
-        backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
-        [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
-
-        self.titleLabel.textColor = [UIColor colorWithRed:[self rgbChange:247] green:[self rgbChange:76] blue:[self rgbChange:49] alpha:1];
+    switch (style) {
+        case blue:
+        {
+            UIImage *backgroundImage = [UIImage imageNamed:@"btn_blue_bg.png"];
+            backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
+            [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+        }
+            break;
+        case white:
+        {
+            UIImage *backgroundImage = [UIImage imageNamed:@"btn_white_bg.png"];
+            backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
+            [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+            
+            self.titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+        }
+            break;
+        case whiteAndred:
+        {
+            UIImage *backgroundImage = [UIImage imageNamed:@"btn_white_bg.png"];
+            backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
+            [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+            
+            self.titleLabel.textColor = [UIColor colorWithRed:[self rgbChange:247] green:[self rgbChange:76] blue:[self rgbChange:49] alpha:1];
+        }
+            break;
+        default:
+            break;
     }
 }
 

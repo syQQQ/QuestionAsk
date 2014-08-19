@@ -45,7 +45,7 @@
 - (void)initControls
 {
     [self.enterBtn setStyle:blue];
-    [self.registerBtn setStyle:blue];
+    [self.registerBtn setStyle:whiteAndRed];
     [self.enterBtn addTarget:self action:@selector(logIn) forControlEvents:UIControlEventTouchDown];
 }
 
