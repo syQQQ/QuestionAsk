@@ -50,4 +50,10 @@
     }
 
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [_searchBar resignFirstResponder];
+    
+}
+
 @end
