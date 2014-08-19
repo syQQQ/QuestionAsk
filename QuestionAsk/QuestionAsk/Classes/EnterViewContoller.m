@@ -37,11 +37,15 @@
     [self.nameTF resignFirstResponder];
     [self.pwdTF resignFirstResponder];
 }
+- (IBAction)gotoRegisterViewButton:(id)sender {
+    
+    [self performSegueWithIdentifier:@"registerView" sender:self];
+}
 
 - (void)initControls
 {
     [self.enterBtn setStyle:blue];
-    [self.registerBtn setStyle:white];
+    [self.registerBtn setStyle:blue];
     [self.enterBtn addTarget:self action:@selector(logIn) forControlEvents:UIControlEventTouchDown];
 }
 
