@@ -7,7 +7,7 @@
 //
 
 #import "ButtonWithBorder.h"
-
+#import "RGBHelper.h"
 @implementation ButtonWithBorder
 
 - (id)initWithFrame:(CGRect)frame
@@ -37,6 +37,8 @@
             UIImage *backgroundImage = [UIImage imageNamed:@"btn_blue_bg.png"];
             backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
             [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+            [self setBackgroundImage:backgroundImage forState:UIControlStateHighlighted];
+            [self setTitleColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:1] forState:UIControlStateNormal];
         }
             break;
         case white:
@@ -44,8 +46,7 @@
             UIImage *backgroundImage = [UIImage imageNamed:@"btn_white_bg.png"];
             backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
             [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
-            
-            self.titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+            [self setTitleColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1] forState:UIControlStateNormal];
         }
             break;
         case whiteAndRed:
@@ -54,17 +55,12 @@
             backgroundImage = [backgroundImage resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]; //九宫格拉伸
             [self setBackgroundImage:backgroundImage forState:UIControlStateNormal];
             
-            self.titleLabel.textColor = [UIColor colorWithRed:[self rgbChange:247] green:[self rgbChange:76] blue:[self rgbChange:49] alpha:1];
+            [self setTitleColor:[UIColor colorWithRed:[RGBHelper rgbChange:247] green:[RGBHelper rgbChange:76] blue:[RGBHelper rgbChange:49] alpha:1] forState:UIControlStateNormal];
         }
             break;
         default:
             break;
     }
-}
-
-- (CGFloat)rgbChange:(NSInteger)num
-{
-    return num / 255.0f;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

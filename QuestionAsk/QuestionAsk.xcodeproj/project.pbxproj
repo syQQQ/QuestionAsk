@@ -70,6 +70,7 @@
 		B506B2F319A3848600FE122E /* 题先生UI规范_98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B2B819A3848600FE122E /* 题先生UI规范_98@2x.png */; };
 		B506B2F419A3848600FE122E /* 题先生UI规范_99@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B2B919A3848600FE122E /* 题先生UI规范_99@2x.png */; };
 		B506B2F619A389A500FE122E /* 题先生UI规范_09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B2F519A389A500FE122E /* 题先生UI规范_09@2x.png */; };
+		B506B2FA19A8758B00FE122E /* RGBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B506B2F919A8758B00FE122E /* RGBHelper.m */; };
 		B51EACDA19A22FDA001D233A /* ButtonWithBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B51EACD919A22FDA001D233A /* ButtonWithBorder.m */; };
 		B533D1D9199CF05F00C78EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B533D1D8199CF05F00C78EBA /* Foundation.framework */; };
 		B533D1DB199CF05F00C78EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B533D1DA199CF05F00C78EBA /* CoreGraphics.framework */; };
@@ -168,6 +169,8 @@
 		B506B2B819A3848600FE122E /* 题先生UI规范_98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_98@2x.png"; sourceTree = "<group>"; };
 		B506B2B919A3848600FE122E /* 题先生UI规范_99@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_99@2x.png"; sourceTree = "<group>"; };
 		B506B2F519A389A500FE122E /* 题先生UI规范_09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_09@2x.png"; sourceTree = "<group>"; };
+		B506B2F819A8758B00FE122E /* RGBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGBHelper.h; path = Classes/RGBHelper.h; sourceTree = "<group>"; };
+		B506B2F919A8758B00FE122E /* RGBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGBHelper.m; path = Classes/RGBHelper.m; sourceTree = "<group>"; };
 		B51EACD819A22FDA001D233A /* ButtonWithBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonWithBorder.h; path = Classes/ButtonWithBorder.h; sourceTree = "<group>"; };
 		B51EACD919A22FDA001D233A /* ButtonWithBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonWithBorder.m; path = Classes/ButtonWithBorder.m; sourceTree = "<group>"; };
 		B533D1D5199CF05F00C78EBA /* QuestionAsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionAsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +290,15 @@
 			path = QuestionAsk/Images;
 			sourceTree = "<group>";
 		};
+		B506B2F719A8754900FE122E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B506B2F819A8758B00FE122E /* RGBHelper.h */,
+				B506B2F919A8758B00FE122E /* RGBHelper.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		B533D1CC199CF05F00C78EBA = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +339,7 @@
 				B5A132C319A07CDE0039BDB0 /* Views */,
 				B5A132C219A07CD00039BDB0 /* Models */,
 				B533D1F3199CF05F00C78EBA /* Images.xcassets */,
+				B506B2F719A8754900FE122E /* Utils */,
 				B533D1DF199CF05F00C78EBA /* Supporting Files */,
 			);
 			name = Classes;
@@ -562,6 +575,7 @@
 				B506B27D19A3825200FE122E /* AnswerCardViewController.m in Sources */,
 				B54B0E9619A196C500B4E019 /* AppDelegate.m in Sources */,
 				B54B0E9C19A196D500B4E019 /* MainViewController.m in Sources */,
+				B506B2FA19A8758B00FE122E /* RGBHelper.m in Sources */,
 				B54B0E9E19A196F300B4E019 /* main.m in Sources */,
 				B54B0FC719A2F30400B4E019 /* MyPracticeViewController.m in Sources */,
 				B51EACDA19A22FDA001D233A /* ButtonWithBorder.m in Sources */,

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MyPracticeViewController : UIViewController
-
+#import "ButtonWithBorder.h"
+@interface MyPracticeViewController : UIViewController <UIActionSheetDelegate>
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *cells;
+@property (retain, nonatomic) NSArray* myData;
+@property (strong, nonatomic) IBOutlet ButtonWithBorder *startBtn;
+- (IBAction)onClickStart:(id)sender;
+@property (nonatomic) NSInteger curViewTag;
 @end
