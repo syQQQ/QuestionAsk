@@ -73,10 +73,12 @@
         }
         NSString *option = [options objectAtIndex:i];
         [as addButtonWithTitle:option];
+        [as addButtonWithTitle:option];
+        [as addButtonWithTitle:option];
     }
 //    [as addButtonWithTitle:@"重置"];
     [as addButtonWithTitle:@"取消"];
-    [as setDestructiveButtonIndex:as.numberOfButtons - 2];
+//    [as setDestructiveButtonIndex:as.numberOfButtons - 2];
     [as setCancelButtonIndex:as.numberOfButtons - 1];
     [as showInView:self.view];
 }
