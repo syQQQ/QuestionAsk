@@ -11,4 +11,5 @@
 @interface ResultViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *myTabelView;
 @property (retain, nonatomic) NSMutableArray *dataSource;
+@property(nonatomic,assign) BOOL automaticallyAdjustsScrollViewInsets NS_AVAILABLE_IOS(7_0); // Defaults to YES
 @end

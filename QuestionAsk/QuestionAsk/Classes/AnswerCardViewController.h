@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AnswerCardViewController : UIViewController
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *ChooseBtns;
+#import "ButtonWithBorder.h"
+@interface AnswerCardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
+@property (strong, nonatomic) IBOutlet ButtonWithBorder *submitBtn;
 
 @end

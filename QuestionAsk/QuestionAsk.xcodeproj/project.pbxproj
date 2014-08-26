@@ -35,8 +35,8 @@
 		B506B2CF19A3848600FE122E /* 竖线#ccc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29419A3848600FE122E /* 竖线#ccc@2x.png */; };
 		B506B2D019A3848600FE122E /* 题先生UI规范.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B506B29519A3848600FE122E /* 题先生UI规范.jpg */; };
 		B506B2D119A3848600FE122E /* 题先生UI规范_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29619A3848600FE122E /* 题先生UI规范_03@2x.png */; };
-		B506B2D219A3848600FE122E /* 题先生UI规范_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29719A3848600FE122E /* 题先生UI规范_05.png */; };
-		B506B2D319A3848600FE122E /* 题先生UI规范_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29819A3848600FE122E /* 题先生UI规范_07.png */; };
+		B506B2D219A3848600FE122E /* 题先生UI规范_05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29719A3848600FE122E /* 题先生UI规范_05@2x.png */; };
+		B506B2D319A3848600FE122E /* 题先生UI规范_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29819A3848600FE122E /* 题先生UI规范_07@2x.png */; };
 		B506B2D519A3848600FE122E /* 题先生UI规范_100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29A19A3848600FE122E /* 题先生UI规范_100@2x.png */; };
 		B506B2D619A3848600FE122E /* 题先生UI规范_101@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29B19A3848600FE122E /* 题先生UI规范_101@2x.png */; };
 		B506B2D719A3848600FE122E /* 题先生UI规范_108@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B29C19A3848600FE122E /* 题先生UI规范_108@2x.png */; };
@@ -72,6 +72,8 @@
 		B506B2F619A389A500FE122E /* 题先生UI规范_09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B2F519A389A500FE122E /* 题先生UI规范_09@2x.png */; };
 		B506B2FA19A8758B00FE122E /* RGBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B506B2F919A8758B00FE122E /* RGBHelper.m */; };
 		B50B7DAF19AB7E5B000130E5 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B7DAE19AB7E5B000130E5 /* ResultViewController.m */; };
+		B50B7DB219ACC611000130E5 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B7DB119ACC611000130E5 /* MyTableViewCell.m */; };
+		B50B7DD119ACD50B000130E5 /* AnswerQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B7DD019ACD50B000130E5 /* AnswerQuestionViewController.m */; };
 		B51EACDA19A22FDA001D233A /* ButtonWithBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B51EACD919A22FDA001D233A /* ButtonWithBorder.m */; };
 		B533D1D9199CF05F00C78EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B533D1D8199CF05F00C78EBA /* Foundation.framework */; };
 		B533D1DB199CF05F00C78EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B533D1DA199CF05F00C78EBA /* CoreGraphics.framework */; };
@@ -135,8 +137,8 @@
 		B506B29419A3848600FE122E /* 竖线#ccc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "竖线#ccc@2x.png"; sourceTree = "<group>"; };
 		B506B29519A3848600FE122E /* 题先生UI规范.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "题先生UI规范.jpg"; sourceTree = "<group>"; };
 		B506B29619A3848600FE122E /* 题先生UI规范_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_03@2x.png"; sourceTree = "<group>"; };
-		B506B29719A3848600FE122E /* 题先生UI规范_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_05.png"; sourceTree = "<group>"; };
-		B506B29819A3848600FE122E /* 题先生UI规范_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_07.png"; sourceTree = "<group>"; };
+		B506B29719A3848600FE122E /* 题先生UI规范_05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_05@2x.png"; sourceTree = "<group>"; };
+		B506B29819A3848600FE122E /* 题先生UI规范_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_07@2x.png"; sourceTree = "<group>"; };
 		B506B29A19A3848600FE122E /* 题先生UI规范_100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_100@2x.png"; sourceTree = "<group>"; };
 		B506B29B19A3848600FE122E /* 题先生UI规范_101@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_101@2x.png"; sourceTree = "<group>"; };
 		B506B29C19A3848600FE122E /* 题先生UI规范_108@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "题先生UI规范_108@2x.png"; sourceTree = "<group>"; };
@@ -174,6 +176,10 @@
 		B506B2F919A8758B00FE122E /* RGBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGBHelper.m; path = Classes/RGBHelper.m; sourceTree = "<group>"; };
 		B50B7DAD19AB7E5B000130E5 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = Classes/ResultViewController.h; sourceTree = "<group>"; };
 		B50B7DAE19AB7E5B000130E5 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = Classes/ResultViewController.m; sourceTree = "<group>"; };
+		B50B7DB019ACC611000130E5 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewCell.h; path = Classes/MyTableViewCell.h; sourceTree = "<group>"; };
+		B50B7DB119ACC611000130E5 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewCell.m; path = Classes/MyTableViewCell.m; sourceTree = "<group>"; };
+		B50B7DCF19ACD50B000130E5 /* AnswerQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerQuestionViewController.h; path = Classes/AnswerQuestionViewController.h; sourceTree = "<group>"; };
+		B50B7DD019ACD50B000130E5 /* AnswerQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnswerQuestionViewController.m; path = Classes/AnswerQuestionViewController.m; sourceTree = "<group>"; };
 		B51EACD819A22FDA001D233A /* ButtonWithBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonWithBorder.h; path = Classes/ButtonWithBorder.h; sourceTree = "<group>"; };
 		B51EACD919A22FDA001D233A /* ButtonWithBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonWithBorder.m; path = Classes/ButtonWithBorder.m; sourceTree = "<group>"; };
 		B533D1D5199CF05F00C78EBA /* QuestionAsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionAsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,8 +260,8 @@
 				B506B29419A3848600FE122E /* 竖线#ccc@2x.png */,
 				B506B29519A3848600FE122E /* 题先生UI规范.jpg */,
 				B506B29619A3848600FE122E /* 题先生UI规范_03@2x.png */,
-				B506B29719A3848600FE122E /* 题先生UI规范_05.png */,
-				B506B29819A3848600FE122E /* 题先生UI规范_07.png */,
+				B506B29719A3848600FE122E /* 题先生UI规范_05@2x.png */,
+				B506B29819A3848600FE122E /* 题先生UI规范_07@2x.png */,
 				B506B29A19A3848600FE122E /* 题先生UI规范_100@2x.png */,
 				B506B29B19A3848600FE122E /* 题先生UI规范_101@2x.png */,
 				B506B29C19A3848600FE122E /* 题先生UI规范_108@2x.png */,
@@ -415,6 +421,10 @@
 				B506B27C19A3825200FE122E /* AnswerCardViewController.m */,
 				B50B7DAD19AB7E5B000130E5 /* ResultViewController.h */,
 				B50B7DAE19AB7E5B000130E5 /* ResultViewController.m */,
+				B50B7DB019ACC611000130E5 /* MyTableViewCell.h */,
+				B50B7DB119ACC611000130E5 /* MyTableViewCell.m */,
+				B50B7DCF19ACD50B000130E5 /* AnswerQuestionViewController.h */,
+				B50B7DD019ACD50B000130E5 /* AnswerQuestionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -528,7 +538,7 @@
 				B506B2D919A3848600FE122E /* 题先生UI规范_114@2x.png in Resources */,
 				B506B2C919A3848600FE122E /* toast_bg.9.png in Resources */,
 				B506B2CA19A3848600FE122E /* toast_bg@2x.png in Resources */,
-				B506B2D219A3848600FE122E /* 题先生UI规范_05.png in Resources */,
+				B506B2D219A3848600FE122E /* 题先生UI规范_05@2x.png in Resources */,
 				B506B2E419A3848600FE122E /* 题先生UI规范_29@2x.png in Resources */,
 				B506B2E319A3848600FE122E /* 题先生UI规范_28@2x.png in Resources */,
 				B506B2BF19A3848600FE122E /* btn_white_bg@2x.png in Resources */,
@@ -553,7 +563,7 @@
 				B506B2CF19A3848600FE122E /* 竖线#ccc@2x.png in Resources */,
 				B506B2DE19A3848600FE122E /* 题先生UI规范_16@2x.png in Resources */,
 				B506B2F319A3848600FE122E /* 题先生UI规范_98@2x.png in Resources */,
-				B506B2D319A3848600FE122E /* 题先生UI规范_07.png in Resources */,
+				B506B2D319A3848600FE122E /* 题先生UI规范_07@2x.png in Resources */,
 				B506B2E919A3848600FE122E /* 题先生UI规范_39@2x.png in Resources */,
 				B506B2C119A3848600FE122E /* btn_white_bg_click@2x.png in Resources */,
 				B506B2EE19A3848600FE122E /* 题先生UI规范_84@2x.png in Resources */,
@@ -584,7 +594,9 @@
 				B54B0E9E19A196F300B4E019 /* main.m in Sources */,
 				B54B0FC719A2F30400B4E019 /* MyPracticeViewController.m in Sources */,
 				B51EACDA19A22FDA001D233A /* ButtonWithBorder.m in Sources */,
+				B50B7DD119ACD50B000130E5 /* AnswerQuestionViewController.m in Sources */,
 				4A0D015819A356FC005F8A6D /* RegisterViewController2.m in Sources */,
+				B50B7DB219ACC611000130E5 /* MyTableViewCell.m in Sources */,
 				B54B0E9B19A196D500B4E019 /* EnterViewContoller.m in Sources */,
 				4A0D015719A356FC005F8A6D /* RegisterViewController.m in Sources */,
 				B50B7DAF19AB7E5B000130E5 /* ResultViewController.m in Sources */,

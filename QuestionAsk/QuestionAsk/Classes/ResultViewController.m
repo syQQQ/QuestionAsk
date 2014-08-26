@@ -7,7 +7,7 @@
 //
 
 #import "ResultViewController.h"
-
+#import "MyTableViewCell.h"
 @interface ResultViewController ()
 
 @end
@@ -27,8 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+//    self.edgesForExtendedLayout = UIExtendedEdgeNone;
     self.myTabelView.delegate = self;
-    [self.myTabelView headerViewForSection:1];
+    self.myTabelView.dataSource = self;
+//    self.myTabelView setScrollIndicatorInsets
+//    [self.myTabelView headerViewForSection:1];
+//    self.myTabelView.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,23 +49,52 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 10;
+    return 25;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"1            2             3                4               5";
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    for (int i = 1; i < 26; i++) {
+        if (i % 5 == 0) {
+            NSMutableArray *arr1 = [NSMutableArray array];
+            for (int j = i - 4; j <= i; j++) {
+                [arr1 addObject:[NSNumber numberWithInt:j]];
+            }
+            [arr addObject:arr1];
+//            [arr1 removeAllObjects];
+        }
+    }
+    NSString *string = [[NSString alloc]init];
+    if (section < 1) {
+        string = [NSString stringWithFormat:@"    %@             %@             %@             %@             %@", [[arr objectAtIndex:section]objectAtIndex:0], [[arr objectAtIndex:section]objectAtIndex:1], [[arr objectAtIndex:section]objectAtIndex:2], [[arr objectAtIndex:section]objectAtIndex:3], [[arr objectAtIndex:section]objectAtIndex:4]];
+    }else if (section == 1) {
+        string = [NSString stringWithFormat:@"    %@             %@             %@             %@            %@", [[arr objectAtIndex:section]objectAtIndex:0], [[arr objectAtIndex:section]objectAtIndex:1], [[arr objectAtIndex:section]objectAtIndex:2], [[arr objectAtIndex:section]objectAtIndex:3], [[arr objectAtIndex:section]objectAtIndex:4]];
+    }else{
+        string = [NSString stringWithFormat:@"   %@           %@           %@           %@           %@", [[arr objectAtIndex:section]objectAtIndex:0], [[arr objectAtIndex:section]objectAtIndex:1], [[arr objectAtIndex:section]objectAtIndex:2], [[arr objectAtIndex:section]objectAtIndex:3], [[arr objectAtIndex:section]objectAtIndex:4]];
+    }
+    
+    return string;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"myCell"];
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
 //    [tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
+//    UIImageView *right = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"题先生UI规范_07.png"]];
+    NSMutableArray *arr = [NSMutableArray array];
+    [arr addObject:[UIImage imageNamed:@"题先生UI规范_05.png"]];
+    [arr addObject:[UIImage imageNamed:@"题先生UI规范_05.png"]];
+    [arr addObject:[UIImage imageNamed:@"题先生UI规范_07.png"]];
+    [arr addObject:[UIImage imageNamed:@"题先生UI规范_07.png"]];
+    [arr addObject:[UIImage imageNamed:@"题先生UI规范_07.png"]];
+    [cell setMyImages:arr];
     return cell;
 }
 /*

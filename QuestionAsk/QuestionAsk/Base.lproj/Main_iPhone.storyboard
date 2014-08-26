@@ -232,7 +232,7 @@
         <!--AnswerCard View Controller-->
         <scene sceneID="TtO-V5-lG8">
             <objects>
-                <viewController id="jnF-df-XRP" userLabel="AnswerCard View Controller" customClass="AnswerCardViewController" sceneMemberID="viewController">
+                <viewController id="jnF-df-XRP" userLabel="AnswerCard View Controller" customClass="AnswerQuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZC8-FM-oZD"/>
                         <viewControllerLayoutGuide type="bottom" id="Shm-LH-Oyh"/>
@@ -339,13 +339,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="答题卡" id="Led-zP-tks"/>
+                    <navigationItem key="navigationItem" title="答题" id="Led-zP-tks"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outletCollection property="ChooseBtns" destination="WJH-T8-FOz" id="fRt-HP-Lww"/>
-                        <outletCollection property="ChooseBtns" destination="7UI-LC-W5i" id="p0k-uN-HH6"/>
-                        <outletCollection property="ChooseBtns" destination="rmQ-yf-dxX" id="vDq-sI-3fG"/>
-                        <outletCollection property="ChooseBtns" destination="56l-8a-C3J" id="XZc-NL-nYb"/>
+                        <outletCollection property="chooseBtn" destination="WJH-T8-FOz" id="IPv-84-l4u"/>
+                        <outletCollection property="chooseBtn" destination="7UI-LC-W5i" id="cTP-cs-WOU"/>
+                        <outletCollection property="chooseBtn" destination="rmQ-yf-dxX" id="Ezl-Hq-qxM"/>
+                        <outletCollection property="chooseBtn" destination="56l-8a-C3J" id="8Sq-K9-yI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KST-o0-JmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -833,7 +833,7 @@
                                         </state>
                                         <connections>
                                             <action selector="onClickStart:" destination="Pu1-Yt-npW" eventType="touchUpInside" id="HW5-6u-zyB"/>
-                                            <segue destination="SCq-TN-phq" kind="push" id="3Cd-Hf-7eg"/>
+                                            <segue destination="jjy-1a-kyO" kind="push" id="Glj-sS-nlG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -857,7 +857,7 @@
             </objects>
             <point key="canvasLocation" x="88" y="-497"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Result View Controller - 成绩单-->
         <scene sceneID="NEF-Ft-mJC">
             <objects>
                 <viewController id="SCq-TN-phq" customClass="ResultViewController" sceneMemberID="viewController">
@@ -890,10 +890,49 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.71764705880000002" blue="0.95294117649999999" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="80" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="bht-cq-pir">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="75" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bht-cq-pir">
                                 <rect key="frame" x="0.0" y="120" width="320" height="384"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Zm1-fD-9Gf" customClass="MyTableViewCell">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zm1-fD-9Gf" id="cGQ-0Y-6gb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="vn9-Pb-B5O">
+                                                    <rect key="frame" x="12" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="0FW-LH-QTj">
+                                                    <rect key="frame" x="72" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-fj-sZG">
+                                                    <rect key="frame" x="133" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqI-ky-SFZ">
+                                                    <rect key="frame" x="194" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="q6X-9W-XMB">
+                                                    <rect key="frame" x="254" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outletCollection property="images" destination="vn9-Pb-B5O" id="gBr-ib-igR"/>
+                                            <outletCollection property="images" destination="0FW-LH-QTj" id="2YW-Cf-WPX"/>
+                                            <outletCollection property="images" destination="T3i-fj-sZG" id="vMt-b7-JtU"/>
+                                            <outletCollection property="images" destination="fqI-ky-SFZ" id="BxL-PF-tfI"/>
+                                            <outletCollection property="images" destination="q6X-9W-XMB" id="RPT-Oh-GMk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="SCq-TN-phq" id="aDF-n7-cse"/>
                                     <outlet property="delegate" destination="SCq-TN-phq" id="wTr-e5-Wtc"/>
@@ -902,14 +941,110 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xfO-pD-xCM"/>
+                    <navigationItem key="navigationItem" title="成绩单" id="xfO-pD-xCM"/>
                     <connections>
                         <outlet property="myTabelView" destination="bht-cq-pir" id="jqh-eS-5vY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Fc-hY-Nek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="-497"/>
+            <point key="canvasLocation" x="468" y="-925"/>
+        </scene>
+        <!--Answer Card View Controller-->
+        <scene sceneID="477-hM-5uX">
+            <objects>
+                <viewController id="jjy-1a-kyO" customClass="AnswerCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SRZ-DK-0Ig"/>
+                        <viewControllerLayoutGuide type="bottom" id="jyp-bf-LoE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Lz-Rr-ifx">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="答题卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5d-zj-aQC">
+                                <rect key="frame" x="10" y="12" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-Bc-QTa">
+                                <rect key="frame" x="269" y="2" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="题先生UI规范_37.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="75" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-YK-kTo">
+                                <rect key="frame" x="0.0" y="42" width="320" height="404"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="PJ5-vT-faV" customClass="MyTableViewCell">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJ5-vT-faV" id="hVK-dz-YE4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="jmL-TZ-qzM">
+                                                    <rect key="frame" x="12" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="QB3-O3-cPd">
+                                                    <rect key="frame" x="72" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-fH-GAq">
+                                                    <rect key="frame" x="133" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="4a3-BK-TlE">
+                                                    <rect key="frame" x="194" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="题先生UI规范_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="m2r-Bu-iRR">
+                                                    <rect key="frame" x="254" y="13" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outletCollection property="images" destination="jmL-TZ-qzM" id="nBW-Dd-6VC"/>
+                                            <outletCollection property="images" destination="QB3-O3-cPd" id="4WK-wk-Eei"/>
+                                            <outletCollection property="images" destination="4jg-fH-GAq" id="zX0-je-IQ0"/>
+                                            <outletCollection property="images" destination="4a3-BK-TlE" id="fsw-FW-wzr"/>
+                                            <outletCollection property="images" destination="m2r-Bu-iRR" id="BDK-yv-1Ji"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jjy-1a-kyO" id="yLU-pO-Yk3"/>
+                                    <outlet property="delegate" destination="jjy-1a-kyO" id="c4Y-VP-Eop"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOo-tQ-psq" customClass="ButtonWithBorder">
+                                <rect key="frame" x="23" y="454" width="275" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="提交并查看结果">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SCq-TN-phq" kind="push" id="1qB-jf-uu3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fbm-Tm-oMm"/>
+                    <connections>
+                        <outlet property="myTableView" destination="AHH-YK-kTo" id="cFJ-ft-EGa"/>
+                        <outlet property="submitBtn" destination="rOo-tQ-psq" id="887-YP-zz0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPv-Ew-vyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-491"/>
         </scene>
     </scenes>
     <resources>
@@ -917,6 +1052,7 @@
         <image name="横线#ccc.png" width="1" height="1"/>
         <image name="竖线#ccc.png" width="1" height="1"/>
         <image name="题先生UI规范_03.png" width="40" height="40"/>
+        <image name="题先生UI规范_07.png" width="40" height="40"/>
         <image name="题先生UI规范_100.png" width="50" height="50"/>
         <image name="题先生UI规范_108.png" width="40" height="40"/>
         <image name="题先生UI规范_120.png" width="40" height="40"/>
@@ -926,6 +1062,7 @@
         <image name="题先生UI规范_17.png" width="40" height="40"/>
         <image name="题先生UI规范_18.png" width="40" height="40"/>
         <image name="题先生UI规范_20.png" width="40" height="40"/>
+        <image name="题先生UI规范_37.png" width="40" height="40"/>
         <image name="题先生UI规范_39.png" width="40" height="40"/>
         <image name="题先生UI规范_41.png" width="40" height="40"/>
         <image name="题先生UI规范_82.png" width="50" height="50"/>
