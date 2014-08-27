@@ -10,6 +10,9 @@
 		4A0D015219A356E3005F8A6D /* RegisterViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D015119A356E3005F8A6D /* RegisterViewController3.m */; };
 		4A0D015719A356FC005F8A6D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D015419A356FC005F8A6D /* RegisterViewController.m */; };
 		4A0D015819A356FC005F8A6D /* RegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D015619A356FC005F8A6D /* RegisterViewController2.m */; };
+		4A49D6B719AE5692002C38AC /* IndividualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A49D6B619AE5692002C38AC /* IndividualViewController.m */; };
+		4A49D6BA19AE575E002C38AC /* SetUserNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A49D6B919AE575E002C38AC /* SetUserNameViewController.m */; };
+		4ABCD88F19AE63EE0082273B /* ErrorQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCD88E19AE63EE0082273B /* ErrorQuestionViewController.m */; };
 		B506B27D19A3825200FE122E /* AnswerCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B506B27C19A3825200FE122E /* AnswerCardViewController.m */; };
 		B506B2BA19A3848600FE122E /* btn_blue_bg.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B27F19A3848600FE122E /* btn_blue_bg.9.png */; };
 		B506B2BB19A3848600FE122E /* btn_blue_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B506B28019A3848600FE122E /* btn_blue_bg@2x.png */; };
@@ -111,6 +114,12 @@
 		4A0D015419A356FC005F8A6D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		4A0D015519A356FC005F8A6D /* RegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController2.h; sourceTree = "<group>"; };
 		4A0D015619A356FC005F8A6D /* RegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController2.m; sourceTree = "<group>"; };
+		4A49D6B519AE5692002C38AC /* IndividualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividualViewController.h; sourceTree = "<group>"; };
+		4A49D6B619AE5692002C38AC /* IndividualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualViewController.m; sourceTree = "<group>"; };
+		4A49D6B819AE575E002C38AC /* SetUserNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUserNameViewController.h; sourceTree = "<group>"; };
+		4A49D6B919AE575E002C38AC /* SetUserNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUserNameViewController.m; sourceTree = "<group>"; };
+		4ABCD88D19AE63EE0082273B /* ErrorQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorQuestionViewController.h; sourceTree = "<group>"; };
+		4ABCD88E19AE63EE0082273B /* ErrorQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorQuestionViewController.m; sourceTree = "<group>"; };
 		B506B27B19A3825200FE122E /* AnswerCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerCardViewController.h; path = Classes/AnswerCardViewController.h; sourceTree = "<group>"; };
 		B506B27C19A3825200FE122E /* AnswerCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnswerCardViewController.m; path = Classes/AnswerCardViewController.m; sourceTree = "<group>"; };
 		B506B27F19A3848600FE122E /* btn_blue_bg.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue_bg.9.png; sourceTree = "<group>"; };
@@ -232,6 +241,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A71BF8219AE71140048BCF6 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D015319A356FC005F8A6D /* RegisterViewController.h */,
+				4A0D015419A356FC005F8A6D /* RegisterViewController.m */,
+				4A0D015519A356FC005F8A6D /* RegisterViewController2.h */,
+				4A0D015619A356FC005F8A6D /* RegisterViewController2.m */,
+				4A0D015019A356E3005F8A6D /* RegisterViewController3.h */,
+				4A0D015119A356E3005F8A6D /* RegisterViewController3.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		4A71BF8319AE713A0048BCF6 /* Individual */ = {
+			isa = PBXGroup;
+			children = (
+				4A49D6B519AE5692002C38AC /* IndividualViewController.h */,
+				4A49D6B619AE5692002C38AC /* IndividualViewController.m */,
+				4A49D6B819AE575E002C38AC /* SetUserNameViewController.h */,
+				4A49D6B919AE575E002C38AC /* SetUserNameViewController.m */,
+				4ABCD88D19AE63EE0082273B /* ErrorQuestionViewController.h */,
+				4ABCD88E19AE63EE0082273B /* ErrorQuestionViewController.m */,
+			);
+			name = Individual;
+			sourceTree = "<group>";
+		};
 		B506B27E19A3848600FE122E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,12 +446,6 @@
 				B51EACD919A22FDA001D233A /* ButtonWithBorder.m */,
 				B54B0FC519A2F30400B4E019 /* MyPracticeViewController.h */,
 				B54B0FC619A2F30400B4E019 /* MyPracticeViewController.m */,
-				4A0D015319A356FC005F8A6D /* RegisterViewController.h */,
-				4A0D015419A356FC005F8A6D /* RegisterViewController.m */,
-				4A0D015519A356FC005F8A6D /* RegisterViewController2.h */,
-				4A0D015619A356FC005F8A6D /* RegisterViewController2.m */,
-				4A0D015019A356E3005F8A6D /* RegisterViewController3.h */,
-				4A0D015119A356E3005F8A6D /* RegisterViewController3.m */,
 				B506B27B19A3825200FE122E /* AnswerCardViewController.h */,
 				B506B27C19A3825200FE122E /* AnswerCardViewController.m */,
 				B50B7DAD19AB7E5B000130E5 /* ResultViewController.h */,
@@ -425,6 +454,8 @@
 				B50B7DB119ACC611000130E5 /* MyTableViewCell.m */,
 				B50B7DCF19ACD50B000130E5 /* AnswerQuestionViewController.h */,
 				B50B7DD019ACD50B000130E5 /* AnswerQuestionViewController.m */,
+				4A71BF8219AE71140048BCF6 /* Register */,
+				4A71BF8319AE713A0048BCF6 /* Individual */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -587,12 +618,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0D015219A356E3005F8A6D /* RegisterViewController3.m in Sources */,
+				4A49D6BA19AE575E002C38AC /* SetUserNameViewController.m in Sources */,
 				B506B27D19A3825200FE122E /* AnswerCardViewController.m in Sources */,
 				B54B0E9619A196C500B4E019 /* AppDelegate.m in Sources */,
+				4A49D6B719AE5692002C38AC /* IndividualViewController.m in Sources */,
 				B54B0E9C19A196D500B4E019 /* MainViewController.m in Sources */,
 				B506B2FA19A8758B00FE122E /* RGBHelper.m in Sources */,
 				B54B0E9E19A196F300B4E019 /* main.m in Sources */,
 				B54B0FC719A2F30400B4E019 /* MyPracticeViewController.m in Sources */,
+				4ABCD88F19AE63EE0082273B /* ErrorQuestionViewController.m in Sources */,
 				B51EACDA19A22FDA001D233A /* ButtonWithBorder.m in Sources */,
 				B50B7DD119ACD50B000130E5 /* AnswerQuestionViewController.m in Sources */,
 				4A0D015819A356FC005F8A6D /* RegisterViewController2.m in Sources */,
