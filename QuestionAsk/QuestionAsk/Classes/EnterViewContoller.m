@@ -7,6 +7,7 @@
 //
 
 #import "EnterViewContoller.h"
+#import "Interface.h"
 @interface EnterViewController ()
 
 @end
@@ -51,12 +52,22 @@
 - (void)logIn
 {
     if ((self.nameTF.text.length > 0 || ![self.nameTF.text  isEqual: @""]) && (self.pwdTF.text.length > 0 || ![self.pwdTF.text  isEqual: @""])) {
-        if (([self.nameTF.text isEqualToString:@"18520220427"]) && [self.pwdTF.text isEqualToString:@"suyiquan"]) {
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        }else{
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"用户名或密码错误" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        Interface *interface = [[Interface alloc]init];
+        NSString* username = self.nameTF.text;
+        NSString* password = self.pwdTF.text;
+        NSDictionary *registerDic = [NSDictionary dictionaryWithObjectsAndKeys:username,@"username",password,@"password", nil];
+        [interface interfaceEnter:registerDic interfaceNname:webUserLogin responseBlock:^(NSDictionary* resDic ,bool finsh, NSString* msg){
+            if (finsh) {
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            }else{
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alert show];
+            }
+        } errorBlock:^(NSError* error){
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"网络连接失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [alert show];
-        }
+        }];
+
     }else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"请输入完整" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];

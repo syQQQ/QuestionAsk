@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ButtonWithBorder.h"
+
 @interface EnterViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet ButtonWithBorder *enterBtn;
