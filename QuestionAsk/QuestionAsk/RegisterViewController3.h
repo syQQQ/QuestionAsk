@@ -10,8 +10,10 @@
 #import "ButtonWithBorder.h"
 
 @interface RegisterViewController3 : UIViewController
+@property NSDictionary* data;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextFild;
 @property (weak, nonatomic) IBOutlet ButtonWithBorder *loadingButton;
 
 @property (weak, nonatomic) IBOutlet UITextField *checkPasswordTextFild;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityInd;
 @end

@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet ButtonWithBorder *registerBtn;
 @property (nonatomic, retain)IBOutlet UITextField *nameTF;
 @property (nonatomic, retain)IBOutlet UITextField *pwdTF;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitInd;
 - (IBAction)textFieldReturnEditing:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
 - (void)logIn;

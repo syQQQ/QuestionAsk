@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "Interface.h"
 
 @interface RegisterViewController ()
 
@@ -44,13 +45,43 @@
     }
     else
     {
-        [self performSegueWithIdentifier:@"getChenkNum" sender:self];
+        if ([_acitivtyInd isAnimating]) {
+            [_acitivtyInd stopAnimating];
+        }else{
+            [_acitivtyInd startAnimating];
+        }
+        self.phoneNumTextField.enabled = NO;
+        self.registerButton.enabled = NO;
+        Interface *interface = [[Interface alloc]init];
+        NSString *phoneNum = self.phoneNumTextField.text;
+        NSDictionary *registerDic = [NSDictionary dictionaryWithObjectsAndKeys:phoneNum,@"mobile", nil];
+        [interface interfaceEnter:registerDic interfaceNname:sendMobileValidCode responseBlock:^(NSDictionary* resDic ,bool finsh, NSString* msg){
+            [_acitivtyInd stopAnimating];
+            self.phoneNumTextField.enabled = YES;
+            self.registerButton.enabled = YES;
+            if (finsh) {
+                self.chenkNum = [resDic objectForKey:@"yzm"];
+                [self performSegueWithIdentifier:@"getChenkNum" sender:self];
+            }else{
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alert show];
+            }
+        }errorBlock:^(NSError *error) {
+            [_acitivtyInd stopAnimating];
+            self.phoneNumTextField.enabled = YES;
+            self.registerButton.enabled = YES;
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"网络连接失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+
+        }];
+        
     }
 
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSString *msg = _phoneNumTextField.text;
+    NSString *phoneNum = _phoneNumTextField.text;
+    NSDictionary *msg = [NSDictionary dictionaryWithObjectsAndKeys:phoneNum,@"mobile",self.chenkNum,@"yzm", nil];
     UIViewController *send = segue.destinationViewController;
     if([send respondsToSelector:@selector(setData:)]) {
         [send setValue:msg forKey:@"data"];

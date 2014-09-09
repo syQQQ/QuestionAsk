@@ -12,7 +12,8 @@
 typedef NS_ENUM (NSInteger, INTERFACENAME) {
     webUserLogin = 1,
     sendMobileValidCode = 2,
-    webUserRegister = 3
+    confirmMobileValidCode = 3,
+    webUserRegister = 4
     //......
 };
 

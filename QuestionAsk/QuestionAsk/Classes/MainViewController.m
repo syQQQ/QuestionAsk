@@ -26,6 +26,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self initControls];
+    self.data = @"立即登入";
+    self.usenameLable.text =self.data;
+    NSLog(@"data:   %@",self.data);
 }
 
 - (void)viewDidAppear:(BOOL)animated

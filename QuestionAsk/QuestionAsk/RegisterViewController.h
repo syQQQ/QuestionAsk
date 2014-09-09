@@ -10,8 +10,10 @@
 #import "ButtonWithBorder.h"
 
 @interface RegisterViewController : UIViewController
+@property NSString* chenkNum;
 @property (weak, nonatomic) IBOutlet ButtonWithBorder *registerButton;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumTextField;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *acitivtyInd;
 
 @end

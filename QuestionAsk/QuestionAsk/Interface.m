@@ -118,8 +118,13 @@
     }
 
     if (interfaceName == 3) {
+        itfStr = @"confirmMobileValidCode";
+    }
+    
+    if (interfaceName == 4) {
         itfStr = @"webUserRegister";
     }
+
     
     return itfStr;
 }

@@ -45,11 +45,11 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSString *msg = _useNameTextField.text;
-    UIViewController *send = segue.destinationViewController;
-    if([send respondsToSelector:@selector(setData:)]) {
-        [send setValue:msg forKey:@"data"];
-    }
+//    NSString *msg = _useNameTextField.text;
+//    UIViewController *send = segue.destinationViewController;
+//    if([send respondsToSelector:@selector(setData:)]) {
+//        [send setValue:msg forKey:@"data"];
+//    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

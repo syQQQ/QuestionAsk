@@ -52,11 +52,27 @@
 - (void)logIn
 {
     if ((self.nameTF.text.length > 0 || ![self.nameTF.text  isEqual: @""]) && (self.pwdTF.text.length > 0 || ![self.pwdTF.text  isEqual: @""])) {
+        if ([_activitInd isAnimating]) {
+            [_activitInd stopAnimating];
+        }else{
+            [_activitInd startAnimating];
+        }
+        self.enterBtn.enabled = NO;
+        self.registerBtn.enabled = NO;
+        self.nameTF.enabled = NO;
+        self.pwdTF.enabled = NO;
+        
         Interface *interface = [[Interface alloc]init];
         NSString* username = self.nameTF.text;
         NSString* password = self.pwdTF.text;
         NSDictionary *registerDic = [NSDictionary dictionaryWithObjectsAndKeys:username,@"username",password,@"password", nil];
         [interface interfaceEnter:registerDic interfaceNname:webUserLogin responseBlock:^(NSDictionary* resDic ,bool finsh, NSString* msg){
+            [_activitInd stopAnimating];
+            self.enterBtn.enabled = YES;
+            self.registerBtn.enabled = YES;
+            self.nameTF.enabled = YES;
+            self.pwdTF.enabled = YES;
+            
             if (finsh) {
                 [self.navigationController popToRootViewControllerAnimated:YES];
             }else{
@@ -64,6 +80,12 @@
                 [alert show];
             }
         } errorBlock:^(NSError* error){
+            [_activitInd stopAnimating];
+            self.enterBtn.enabled = YES;
+            self.registerBtn.enabled = YES;
+            self.nameTF.enabled = YES;
+            self.pwdTF.enabled = YES;
+            
             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"网络连接失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [alert show];
         }];

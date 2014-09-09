@@ -10,9 +10,11 @@
 #import "ButtonWithBorder.h"
 
 @interface RegisterViewController2 : UIViewController
-@property NSString* data;
+@property NSDictionary* data;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 @property (weak, nonatomic) IBOutlet UITextField *checkNumTextField;
 @property (weak, nonatomic) IBOutlet ButtonWithBorder *pushButton;
+@property (weak, nonatomic) IBOutlet UIButton *isGetButton;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityInd;
 
 @end

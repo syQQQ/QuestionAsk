@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+@property NSString* data;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *backRects;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UILabel *usenameLable;
 
 @end
